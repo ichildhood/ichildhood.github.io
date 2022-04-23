@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>My New Hugo Site</title>
+        <link>https://ichildhood.github.io/</link>
+        <description>Recent content on My New Hugo Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 23 Apr 2022 18:06:26 +0800</lastBuildDate><atom:link href="https://ichildhood.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>First</title>
+        <link>https://ichildhood.github.io/post/first/</link>
+        <pubDate>Sat, 23 Apr 2022 18:06:26 +0800</pubDate>
+        
+        <guid>https://ichildhood.github.io/post/first/</guid>
+        <description>&lt;h2 id=&#34;麻了呀&#34;&gt;麻了呀&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;啥玩意呀&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
