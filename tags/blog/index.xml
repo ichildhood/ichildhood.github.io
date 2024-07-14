@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Blog on ichildhood</title>
-        <link>https://example.com/tags/blog/</link>
+        <link>http://localhost:1313/tags/blog/</link>
         <description>Recent content in Blog on ichildhood</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>ichildhood</copyright>
-        <lastBuildDate>Mon, 01 Jul 2024 23:05:32 +0800</lastBuildDate><atom:link href="https://example.com/tags/blog/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 01 Jul 2024 23:05:32 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Test</title>
-        <link>https://example.com/p/test/</link>
+        <link>http://localhost:1313/p/test/</link>
         <pubDate>Mon, 01 Jul 2024 23:05:32 +0800</pubDate>
         
-        <guid>https://example.com/p/test/</guid>
+        <guid>http://localhost:1313/p/test/</guid>
         <description>&lt;h2 id=&#34;博客技巧&#34;&gt;博客技巧
 &lt;/h2&gt;&lt;p&gt;可以采用以下链接查看并学习这个博客工具本身的用法，根据论坛网友的经验，这个模版tags是好用的，别的归纳策略总会出一些bug，正好我也非常喜欢用Tags管理，所以常用Tags啦。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
