@@ -1,0 +1,251 @@
+baseurl: https://example.com  # 网站的基本 URL 。替换为你自己的网站域名。
+languageCode: en-us  # 网站的默认语言代码，zh-cn 指中文简体。
+theme: stack  # 使用的 Hugo 主题，这里是 Stack 主题。
+paginate: 3  # 每页显示的内容数量，通常用于分页设置。
+title: Example Site  # 网站的标题，会显示在浏览器标签上。
+copyright: Example Person  # 网站的版权信息，通常显示在页面底部。
+
+# Theme i18n support
+# Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
+DefaultContentLanguage: en  # 设置网站的默认内容语言。可选值见上注释。
+
+# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
+# This will make .Summary and .WordCount behave correctly for CJK languages.
+hasCJKLanguage: false  # 如果默认语言是中文、日文或韩文，设置为 true 以确保摘要和字数统计正确。
+
+languages:
+    en:
+        languageName: English  # 英语语言配置
+        title: Example Site  # 英文站点标题
+        weight: 1  # 语言权重，数值越小排序越靠前
+        params:
+            description: Example description  # 英文站点描述
+    zh-cn:
+        languageName: 中文  # 中文语言配置
+        title: 演示站点  # 中文站点标题
+        weight: 2  # 中文站点语言权重
+        params:
+            description: 演示说明  # 中文站点描述
+    ar:
+        languageName: عربي  # 阿拉伯语配置
+        languagedirection: rtl  # 文字方向，从右到左
+        title: موقع تجريبي  # 阿拉伯语站点标题
+        weight: 3  # 阿拉伯语站点语言权重
+        params:
+            description: وصف تجريبي  # 阿拉伯语站点描述
+
+# services:
+#     # Change it to your Disqus shortname before using
+#     disqus:
+#         shortname: "hugo-theme-stack"  # Disqus 评论系统的短名称，需替换为你自己的 Disqus 短名称。
+    # GA Tracking ID
+    # googleAnalytics:
+    #     id:  # Google Analytics 追踪 ID，用于网站流量统计。
+
+permalinks:
+    post: /p/:slug/  # 博客文章的永久链接格式，使用文章的 slug 作为路径。
+    page: /:slug/  # 页面内容的永久链接格式。
+
+params:
+    mainSections:
+        - post  # 主内容区域，显示文章内容。
+    featuredImageField: image  # 特色图片字段的名称。
+    rssFullContent: true  # RSS 提要是否包含全文内容。
+    favicon: # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+        # 网站的favicon路径，例如`/favicon.ico`。
+
+    footer:
+        since: 2020  # 网站创建年份，通常显示在页脚。
+        customText:  # 自定义页脚文本。
+
+    dateFormat:
+        published: Jan 02, 2006  # 发布日期格式。
+        lastUpdated: Jan 02, 2006 15:04 MST  # 最后更新日期格式。
+
+    sidebar:
+        emoji: 🍥  # 侧边栏标题旁显示的 emoji。
+        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.  # 侧边栏的副标题。
+        avatar:
+            enabled: true  # 是否启用头像显示。
+            local: true  # 是否使用本地头像。
+            src: img/avatar.png  # 头像图片路径。
+
+    article:
+        math: false  # 是否支持数学公式渲染。
+        toc: true  # 是否显示文章目录。
+        readingTime: true  # 是否显示预计阅读时间。
+        license:
+            enabled: true  # 是否启用文章版权信息。
+            default: Licensed under CC BY-NC-SA 4.0  # 默认版权协议。
+
+    comments:
+        enabled: true  # 是否启用评论功能。
+        provider: disqus  # 选择的评论提供商，默认为 Disqus。
+
+        disqusjs:
+            shortname:  # DisqusJS 的短名称。
+            apiUrl:  # DisqusJS 的 API URL。
+            apiKey:  # DisqusJS 的 API Key。
+            admin:  # DisqusJS 的管理员用户名。
+            adminLabel:  # DisqusJS 管理员标签。
+
+        utterances:
+            repo:  # Utterances 评论系统的 GitHub 仓库地址。
+            issueTerm: pathname  # Utterances 评论系统的议题关联方式，使用页面路径。
+            label:  # Utterances 评论系统的标签。
+
+        beaudar:
+            repo:  # Beaudar 评论系统的 GitHub 仓库地址。
+            issueTerm: pathname  # Beaudar 评论系统的议题关联方式。
+            label:  # Beaudar 评论系统的标签。
+            theme:  # Beaudar 评论系统的主题。
+
+        remark42:
+            host:  # Remark42 的主机地址。
+            site:  # Remark42 的站点标识符。
+            locale:  # Remark42 的语言设置。
+
+        vssue:
+            platform:  # Vssue 使用的平台（例如 GitHub）。
+            owner:  # Vssue 评论仓库的所有者。
+            repo:  # Vssue 评论的 GitHub 仓库地址。
+            clientId:  # Vssue 的 OAuth 应用 Client ID。
+            clientSecret:  # Vssue 的 OAuth 应用 Client Secret。
+            autoCreateIssue: false  # 是否自动创建评论议题。
+
+        waline:
+            serverURL:  # Waline 评论系统的服务器 URL。
+            lang:  # Waline 的语言设置。
+            pageview:  # 是否启用页面浏览统计。
+            emoji:  # Waline 的 Emoji 表情包地址。
+                - https://unpkg.com/@waline/emojis@1.0.1/weibo
+            requiredMeta:
+                - name  # 评论时需要填写的字段，用户名。
+                - email  # 评论时需要填写的字段，电子邮件地址。
+                - url  # 评论时需要填写的字段，网址。
+            locale:
+                admin: Admin  # Waline 评论系统的管理员名称。
+                placeholder:  # Waline 评论框的占位符文本。
+
+        twikoo:
+            envId:  # Twikoo 评论系统的环境 ID。
+            region:  # Twikoo 评论系统的部署区域。
+            path:  # Twikoo 评论系统的路径。
+            lang:  # Twikoo 评论系统的语言设置。
+
+        cactus:
+            defaultHomeserverUrl: "https://matrix.cactus.chat:8448"  # Cactus.Chat 的默认主服务器 URL。
+            serverName: "cactus.chat"  # Cactus.Chat 的服务器名称。
+            siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
+            # Cactus.Chat 的站点名称，需与注册的标识符匹配。
+
+        giscus:
+            repo:  # Giscus 评论系统的 GitHub 仓库地址。
+            repoID:  # Giscus 仓库的唯一标识符。
+            category:  # Giscus 的分类名称。
+            categoryID:  # Giscus 分类的唯一标识符。
+            mapping:  # Giscus 的议题关联方式。
+            lightTheme:  # Giscus 的浅色主题设置。
+            darkTheme:  # Giscus 的深色主题设置。
+            reactionsEnabled: 1  # 是否启用 Giscus 的反应功能。
+            emitMetadata: 0  # 是否启用 Giscus 的元数据发射功能。
+
+        gitalk:
+            owner:  # Gitalk 评论系统的仓库所有者。
+            admin:  # Gitalk 评论系统的管理员用户名。
+            repo:  # Gitalk 评论的 GitHub 仓库地址。
+            clientID:  # Gitalk 的 OAuth 应用 Client ID。
+            clientSecret:  # Gitalk 的 OAuth 应用 Client Secret。
+
+        cusdis:
+            host:  # Cusdis 评论系统的主机地址。
+            id:  # Cusdis 的站点标识符。
+    widgets:
+        homepage:
+            - type: search  # 首页的小部件，搜索功能。
+            - type: archives  # 首页的小部件，文章归档。
+              params:
+                  limit: 5  # 显示的归档文章数量。
+            - type: categories  # 首页的小部件，文章分类。
+              params:
+                  limit: 10  # 显示的分类数量。
+            - type: tag-cloud  # 首页的小部件，标签云。
+              params:
+                  limit: 10  # 显示的标签数量。
+        page:
+            - type: toc  # 页面的小部件，显示文章目录。
+
+    opengraph:
+        twitter:
+            # Your Twitter username
+            site:  # 你的 Twitter 用户名，将在 OpenGraph 元数据中使用。
+            # Available values: summary, summary_large_image
+            card: summary_large_image  # Twitter 卡片类型。可以选择 `summary` 或 `summary_large_image`，后者显示大图。
+
+    defaultImage:
+        opengraph:
+            enabled: false  # 是否为没有特色图片的页面启用默认 OpenGraph 图片。
+            local: false  # 是否使用本地图片作为 OpenGraph 图片。
+            src:  # 默认 OpenGraph 图片的路径。
+
+    colorScheme:
+        # Display toggle
+        toggle: true  # 是否在页面上显示颜色模式切换按钮。
+
+        # Available values: auto, light, dark
+        default: auto  # 默认的颜色模式。可以选择自动切换（auto），或固定为亮色（light）或暗色（dark）。
+
+    imageProcessing:
+        cover:
+            enabled: true  # 是否为封面图片启用自动处理功能，例如裁剪、缩放等。
+        content:
+            enabled: true  # 是否为内容图片启用自动处理功能。
+
+### Custom menu
+### See https://stack.jimmycai.com/config/menu
+### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
+menu:
+    main: []  # 自定义主菜单的配置，可以在这里添加导航链接。
+
+    social:
+        - identifier: GitHub  # 社交链接的标识符，通常用于指定图标。
+          name: GitHub  # 链接的显示名称。
+          url: https://GitHub.com/CaiJimmy/hugo-theme-stack  # GitHub 个人主页的链接。
+          params:
+              icon: brand-GitHub  # 使用的社交图标，这里是 GitHub 图标。
+
+        - identifier: twitter  # 另一个社交链接配置，这里是 Twitter。
+          name: Twitter  # Twitter 链接的显示名称。
+          url: https://twitter.com  # Twitter 的链接。
+          params:
+              icon: brand-twitter  # 使用的社交图标，这里是 Twitter 图标。
+
+related:
+    includeNewer: true  # 是否在相关文章中包含较新的文章。
+    threshold: 60  # 相关文章匹配的相似度阈值，范围是0到100。
+    toLower: false  # 是否将标签和分类转换为小写。
+    indices:
+        - name: tags  # 使用标签作为相关文章的匹配依据。
+          weight: 100  # 标签匹配的权重值。
+        - name: categories  # 使用分类作为相关文章的匹配依据。
+          weight: 200  # 分类匹配的权重值。
+
+markup:
+    goldmark:
+        renderer:
+            ## Set to true if you have HTML content inside Markdown
+            unsafe: true  # 如果 Markdown 中包含 HTML 内容，设置为 true 以允许渲染这些 HTML。
+
+    tableOfContents:
+        endLevel: 4  # 目录生成时的最大标题级别。
+        ordered: true  # 目录项是否使用有序列表。
+        startLevel: 2  # 目录生成时的起始标题级别。
+
+    highlight:
+        noClasses: false  # 语法高亮时是否禁用 CSS 类名。
+        codeFences: true  # 是否启用代码块语法高亮。
+        guessSyntax: true  # 是否自动猜测代码块的语言进行语法高亮。
+        lineNoStart: 1  # 代码行号的起始值。
+        lineNos: true  # 是否在代码块中显示行号。
+        lineNumbersInTable: true  # 是否在表格样式中显示行号。
+        tabWidth: 4  # 代码块中 Tab 的宽度（空格数）。
