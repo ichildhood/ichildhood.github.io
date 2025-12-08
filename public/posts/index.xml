@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on 山己几的博客</title>
-        <link>http://localhost:1313/posts/</link>
+        <link>https://ichildhood.github.io/posts/</link>
         <description>Recent content in Posts on 山己几的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Mon, 08 Dec 2025 12:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 08 Dec 2025 12:00:00 +0800</lastBuildDate><atom:link href="https://ichildhood.github.io/posts/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>第一篇文章</title>
-        <link>http://localhost:1313/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+        <link>https://ichildhood.github.io/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
         <pubDate>Mon, 08 Dec 2025 12:00:00 +0800</pubDate>
         
-        <guid>http://localhost:1313/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+        <guid>https://ichildhood.github.io/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
         <description>&lt;p&gt;我的测试博客&lt;/p&gt;
 </description>
         </item>
