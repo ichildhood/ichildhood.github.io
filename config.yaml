@@ -1,4 +1,4 @@
-baseurl: https://example.com  # 网站的基本 URL 。替换为你自己的网站域名。
+baseurl: https://ichildhood.github.io  # 网站的基本 URL 。替换为你自己的网站域名。
 languageCode: en-us  # 网站的默认语言代码，zh-cn 指中文简体。
 theme: stack  # 使用的 Hugo 主题，这里是 Stack 主题。
 paginate: 3  # 每页显示的内容数量，通常用于分页设置。
