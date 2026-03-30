@@ -114,23 +114,11 @@ int main()
 
 ```text
 0x132 > 0xFF
-```
-
 分解为：
-
-```text
 0x1 和 0x32
-```
-
 突出的高 8 位删除，加到低 8 位中：
-
-```text
 0x1 + 0x32 = 0x33
-```
-
 增强校验的形式为：
-
-```text
 (NOT)(DATA_Byte1 + ...... + DATA_Byte8 + PID)
 ```
 
